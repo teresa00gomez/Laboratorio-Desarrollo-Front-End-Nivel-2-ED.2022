@@ -1,0 +1,118 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Futura', serif;
+    background-color: #242933;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container{
+    max-width: 80%;
+    width: 500px;
+    border: 3px solid #343b4b;
+    border-radius: 10px;
+    background-color: #2f3644;
+    margin: 30px;
+}
+
+.form{
+    padding: 40px 40px ;
+}
+
+h1{
+   color: #acbae1;
+   display: block;
+   font-size: 2em;
+   padding-bottom: 30px;
+}
+
+.form-grupo{
+    margin-bottom: 10px;
+    padding-bottom: 20px ;
+    position: relative;
+}  
+
+.form-grupo label{
+    display: inline-block;
+    margin-bottom: 5px;
+    color: #acbae1;
+}
+
+.form-grupo input{
+    border: 1px solid #acbae1;
+    border-radius: 5px;
+    display: block;
+    font-size: 15px;
+    padding: 10px;
+    width: 100%;
+   
+}
+.form-grupo input:focus{
+     border: 3px solid #6c63ff;
+     outline: none;  
+}
+ 
+.form-boton{
+    margin-top: 30px;
+    line-height: 45px;
+    width: 100%;
+    text-align: center;
+    background: #6c63ff;
+    color: #ffffff;
+    border-color: #191b1f;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .1s ease all;
+    display: block;
+}
+
+.form-boton:hover{
+    box-shadow: 1px 0px 5px #acbae1;
+    border: 2px solid #ffffff;
+}
+
+
+/* ----- Estilos para validar ----- */ 
+
+.form-grupo.success input {
+    border-color: #45b945;
+}
+
+.form-grupo i{
+    visibility: hidden;
+    position: absolute;
+    top: 40px;
+    right: 10px;
+}
+.form-grupo.success i.fa-circle-check {
+    color: #45b945;
+    visibility: visible;
+}
+
+.form-grupo.success i.fa-exclamation-circle { 
+     color:#C35557;
+     visibility: visible;
+}
+
+.form-grupo small{
+    color:#C35557;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.form-grupo.error small{
+   visibility: visible;
+}
+
+
+
+
+
