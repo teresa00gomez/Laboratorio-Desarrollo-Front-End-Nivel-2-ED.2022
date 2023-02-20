@@ -22,8 +22,8 @@ function checkInputs() {
 	
 	if(nombreValue === '') {
 		setErrorFor(nombre, 'Rellene este campo');
-	} else if (!isEmail(emailValue)) {
-		setErrorFor(email, 'Email inválido');
+	} else if (!isNombre(nombreValue)) {
+		setErrorFor(nombre, 'Solo caracteres alfabéticos');
 	} else {
 		setSuccessFor(nombre);
 	}
@@ -76,5 +76,5 @@ function isEmail(email) {
 }
 
 function isPassword(password) {
-	return /^.{4,8}$/.test(email);// 4 a 8 digitos.
+	return /^.{4,8}$/.test(password);// 4 a 8 dígitos.
 }
